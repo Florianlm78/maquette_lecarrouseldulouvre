@@ -1,0 +1,676 @@
+@import url(https://fr.allfont.net/allfont.css?fonts=libre-baskerville-bold);
+
+
+/* ------------------------- Preset ------------------------- */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* ------------------------- HEADER / NAV ------------------------- */
+
+header{
+    width: 100vw;
+    height: 90px;
+}
+
+/* Menu left */
+
+.leftNav{
+    height: 100%;
+    width: 350px;
+    margin-left: 10vw;
+    float: left;
+}
+
+.leftUl{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    font-family: 'Avenir';
+    font-size: 12px;
+}
+
+.nav{
+    display: inline;
+}
+
+
+.navL{
+    color: #190D45;
+}
+
+/* Menu centre */
+
+.centerNav{
+    position: absolute;
+    height: 90px;
+    width: 200px;
+    left: 43vw;
+}
+
+.logoCarrousel{
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu right */
+
+.rightNav{
+    height: 100%;
+    width: 35vw;
+    margin-right: 4vw;
+    float: right;
+}
+
+.rightUl{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+    font-family: 'Avenir';
+    font-size: 12px;
+}
+
+.navR{
+    color: #190D45;
+}
+
+.pipe{
+    color: #190D45;
+    opacity: 20%;
+}
+
+
+/* ------------------------- CARROUSEL------------------------- */
+
+
+.carrousel{
+    width: 100vw;
+    height: 572px;
+    background-color: wheat;
+}
+
+/* Partie gauche du carrousel */
+
+.leftPart{
+    height: 100%;
+    width: 75vw;
+    float: left;
+    background-color: violet;
+}
+
+/* Grande photo du carrousel */
+
+.lhPart{
+    height: 75%;
+    width: 100%;
+    background-image: url(./img/big_picture.png);
+    background-size: cover;
+}
+
+/* Partie avec le texte, le like et les boutons de navigation */
+
+.lbPart{
+    height: 25%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Partie avec le texte de présentation */
+
+.lblPart{
+    height: 100%;
+    width: 66.9%;
+    background-color: #190D45;
+    float: left;
+    display: flex;
+}
+
+.carrouselContent{
+    font-family: 'Avenir';
+    width: 75%;
+    height: 30%;
+    margin: auto;
+    
+}
+
+.carrouselTitle{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    color: white;
+}
+
+.carrouselAuthor{
+    padding-top: 4px;
+    font-family: 'Avenir';
+    font-weight: 100;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+/* Partie avec le like et les boutons de navigation */
+
+.lbrPart{
+    height: 100%;
+    width: 33%;
+    background-color: thistle;
+    float: right;
+}
+
+/* Partie avec le like */
+
+.lbrlPart{
+    float: left;
+    height: 100%;
+    width: 30%;
+    background-color: #190D45;
+    display: flex;
+}
+
+.like{
+    width: 32px;
+    margin: auto;
+}
+
+.likePng{
+    height: 30px;
+}
+
+/* Partie avec les flèches directionnel */
+
+.lbrrPart{
+    float: right;
+    height: 100%;
+    width: 70%;
+    background-color: #190D45;
+}
+
+.lbrrlPart{
+    float: left;
+    height: 100%;
+    width: 49.8%;
+    background-color: white;
+    display: flex;
+    cursor: pointer;
+}
+
+.lArrow{
+    height: 40%;
+    width: 40%;
+    margin: auto;
+    display: flex;
+}
+
+.leftArrow{
+    height: 50px;
+    margin: auto;
+}
+
+.lbrrrPart{
+    float: right;
+    height: 100%;
+    width: 49.8%;
+    background-color: white;
+    display: flex;
+    cursor: pointer;
+}
+
+.rArrow{
+    height: 40%;
+    width: 40%;
+    margin: auto;
+    display: flex;
+}
+
+.rightArrow{
+    height: 50px;
+    margin: auto;
+}
+
+/* Partie droite du carroussel avec les 3 petites photos */
+
+.rightPart{
+    height: 100%;
+    width: 25vw;
+    float: right;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.rpOne{
+    width: 100%;
+    height: 33%;
+    background-color: peachpuff;
+    margin: 0 0 3px 3px;
+}
+
+.rpTwo{
+    width: 100%;
+    height: 33%;
+    background-color: plum;
+    margin: 0 0 3px 3px;
+}
+
+.rpThree{
+    width: 100%;
+    height: 33%;
+    background-color: rebeccapurple;
+    margin: 0 0 3px 3px;
+}
+
+
+
+.rpOne{
+    background-image: url(./img/small_picture_1.png);
+    background-size: cover;
+}
+
+.rpTwo{
+    background-image: url(./img/small_picture_2.png);
+    background-size: cover;
+}
+
+.rpThree{
+    background-image: url(./img/small_picture_3.png);
+    background-size: cover;
+}
+
+
+/* ------------------------- EXPOSANTS ------------------------- */
+
+.exposants{
+    height: 780px;
+    width: 100%;
+}
+
+.title{
+    position: relative;
+    height: 67px;
+    width: 230px;
+    display: flex;
+    margin: 100px auto;
+    
+}
+.titleText{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 33%;
+    font-family: 'Libre Baskerville Bold', serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #190D45;
+}
+
+
+.round{
+    position: absolute;
+    z-index: 1;
+    height: 67px;
+    width: 67px;
+    background-color: #FFF9C0;
+    border-radius: 50%;
+}
+
+/* ------------------------- CARROUSEL EXPOSANTS ------------------------- */
+.cursor{
+    z-index: 3;
+    width: 80px;
+    height: 80px;
+    cursor: none;
+    background-image: url(img/cursor.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 86%;
+}
+
+  .swiper-container {
+    width: 95%;
+    height: 60%;
+  }
+
+  .swiper-slide {
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+
+
+.swipPicture{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.swipTitle{
+    padding-top: 6px;
+    width: 100%;
+    height: 10%;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    color: #190D45;
+}
+
+.swipSub{
+    width: 100%;
+    height: 5%;
+    padding-top: 6px;
+}
+
+.swipSubTitle{
+    font-family: 'Avenir book';
+    font-size: 10px;
+    color: #190D45;
+    float: left;
+}
+
+
+.swipSubArrow{
+    height: 12px;
+    padding-left: 5px;
+}
+
+/* ------------------------- BOUTON EXPOSANTS ------------------------- */
+
+.btn{
+    height: 60px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+button{
+    height: 50px;
+    width: 286px;
+    background-color: #190D45;
+    display: flex;
+    cursor: pointer;
+    border: none;
+    margin: auto;
+}
+
+.btn-exposant-text{
+    font-family: 'Avenir light';
+    font-size: 12px;
+    color: #ffffff;
+    margin: auto;
+}
+
+/* ------------------------- CATEGORIES ------------------------- */
+
+.containerCategories{
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.categories{
+    height: 221px;
+    width: 920px;
+    margin: auto;
+}
+
+.titleC{
+    position: relative;
+    height: 32%;
+    width: 195px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.categories-box-top{
+    margin-top: 10%;
+    width: 100%;
+    height: 28%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-box-bottom{
+    margin-top: 10px;
+    width: 100%;
+    height: 28%;
+    display: flex;
+    justify-content: center;
+}
+
+.cate-box{
+    height: 51px;
+    background-color: #FFFFFF;
+    border: 1px solid #190D45;
+    display: flex;
+    cursor: default;
+    color: #190D45;
+}
+
+.cate-box:hover{
+    background-color: #190D45;;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition-duration: 0.3s;
+}
+
+.cate-text{
+    font-family: 'Avenir light';
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: auto;
+    
+}
+
+.b1{
+    width: 118px;
+}
+
+.b2{
+    width: 94px;
+}
+
+.b3{
+    width: 97px;
+}
+
+.b4{
+    width: 128px;
+}
+
+.b5{
+    width: 70px;
+}
+
+.b6{
+    width: 139px;
+}
+
+.b7{
+    width: 95px;
+}
+
+.b8{
+    width: 108px;
+}
+
+.b9{
+    width: 94px;
+}
+
+.b10{
+    width: 174px;
+    margin: 0 10px 0 10px;
+}
+
+.b11{
+    width: 118px;
+}
+
+/* ------------------------- TABLEAUX ------------------------- */
+
+.tableaux{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+
+.tabbg{
+    z-index: 3;
+    width: 70vw;
+    height: 480px;
+    background-color: #F1F2F6;
+    margin: auto 0;
+}
+
+.tabs{
+    display: flex;
+    position: absolute;
+    z-index: 4;
+    height: 373px;
+    width: 1110px;
+    background-color: transparent;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+}
+
+.tab1{
+    height: 100%;
+    width: 540px;
+    background-color: chocolate;
+    float: left;
+}
+
+.tab2{
+    height: 100%;
+    width: 540px;
+    background-color: crimson;
+    float: right;
+}
+
+.tableauGauche{
+    height: 100%;
+    width: 100%;
+}
+
+.tableauDroite{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ------------------------- FOOTER ------------------------- */
+
+footer{
+    height: 254px;
+    width: 100%;
+    background-color: #F1F2F6;
+    display: flex;
+}
+
+.footerLogo{
+    height: 100%;
+    width: 30%;
+    display: flex;
+}
+
+.footerLink1{
+    height: 100%;
+    width: 20%;
+    display: flex;
+}
+
+.footerLink2{
+    height: 100%;
+    width: 20%;
+    display: flex;
+}
+
+.footerSearch{
+    height: 100%;
+    width: 30%;
+    display: flex
+}
+
+.footerLogoCarrousel{
+    height: 130px;
+    margin: auto;
+}
+
+.footerMenu{
+    width: 160.5px;
+    height: 129px;
+    margin: auto;
+}
+
+.footerMenuTitle{
+    font-family: 'Avenir light';
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #190D45;
+}
+
+.footerMenuLine{
+    height: 1px;
+    width: 160px;
+    background-color: #DFDFDF;
+    margin: 8px 0;
+
+}
+
+.link{
+    font-family: 'Avenir light';
+    font-size: 15px;
+    color: #808085;
+}
+
+.liLink{
+    margin-top: 10px;
+}
+
+.footerMenu2{
+    width: 180.5px;
+    height: 129px;
+    margin: auto 20%;
+}
+
+.footerMenuLine2{
+    height: 1px;
+    width: 255px;
+    background-color: #DFDFDF;
+    margin: 8px 0;
+}
+
+.barRecherche{
+    display: flex;
+    height: 20px;
+    width: 255px;
+    justify-content: space-between;
+}
+
+.loop{
+    height: 14px;
+}
