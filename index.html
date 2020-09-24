@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,13 @@
 </head>
 
 <header>
+
+<!-- MENU  -->
+
     <div class="leftNav">
         <nav class="leftMenu">
             <ul class="leftUl">
-                <li> 
+                <li>
                     <a class="navL" href="#">OEUVRES</a>
                     <img class="swipSubArrow" src="img/nav-arrow-bottom.png" alt="Flèche menu">
                 </li>
@@ -37,179 +41,216 @@
             </ul>
         </nav>
     </div>
+
+<!-- MENU RESPONSIVE -->
+
+    <div class="toggle_btn">
+        <span></span>
+    </div>
+
+    <div class="menu nav">
+        <a href="#">OEUVRES</a>
+        <a href="#">EXPOSANTS</a>
+        <a href="#">RDV VIRTUEL</a>
+        <a href="#">FINEARTS-PARIS.FR</a>
+        <a href="#">INFORMATIONS PRATIQUES</a>
+        <a href="#">MA LISTE</a>
+    </div>
 </header>
 
 
 <body>
-<div class="carrousel">
-    <div class="leftPart">
-        <div class="lhPart"></div>
-        <div class="lbPart">
-            <div class="lblPart">
-                <div class="carrouselContent">
-                    <p class="carrouselTitle">Venise, le môle à l’entrée du grand canal et la Salute.</p>
-                    <p class="carrouselAuthor">EUGENE BOUDIN, 1895 / GALLERIE PERROTIN</p>
+
+<!-- CARROUSSEL  -->
+
+    <div class="carrousel-swiper">
+        <!-- Partie gauche du carrousel  -->
+        <div class="gallerieG">
+            <div class="swiper-container gallery-top gallery-container-img">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-img" style="background-image:url('img/big_picture.png')"></div>
+                    <div class="swiper-slide gallery-img" style="background-image:url('img/small_picture_1.png')"></div>
+                    <div class="swiper-slide gallery-img" style="background-image:url('img/small_picture_2.png')"></div>
+                    <div class="swiper-slide gallery-img" style="background-image:url('img/small_picture_3.png')"></div>
                 </div>
             </div>
-            <div class="lbrPart">
-                <div class="lbrlPart">
-                    <div class="like">
-                        <img class="likePng" src="./img/like.png" alt="Like">
+
+            <div class="gallerie-text-like-bouton">
+                <div class="gallerie-text">
+                    <div class="gallerie-text-p">
+                        <p class="gallerie-text-p-title">Venise, le môle à l’entrée du grand canal et la Salute.</p>
+                        <p class="gallerie-text-p-author">Eugene Boudin, 1895 / GALLERIE PERROTIN</p>
                     </div>
                 </div>
-                <div class="lbrrPart">
-                    <div class="lbrrlPart">
-                        <div class="lArrow">
-                            <img class="leftArrow" src="./img/left_arrow.png" alt="Flèche de gauche">
-                        </div>
+                <div class="gallerie-like">
+                    <img class="likePng" src="./img/like.png" alt="Like">
+                </div>
+
+                <div class="gallerie-bouton">
+                    <div class="gallerie-bouton-prev">
+                        <div class="swiper-button-prev swiper-button-white lArrow"></div>
                     </div>
-                    <div class="lbrrrPart">
-                        <div class="rArrow">
-                            <img class="leftArrow" src="./img/right_arrow.png" alt="Flèche de droite">
-                        </div>
+                    <div class="gallerie-bouton-next">
+                        <div class="swiper-button-next swiper-button-white rArrow"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="rightPart">
-        <div class="rpOne"></div>
-        <div class="rpTwo"></div>
-        <div class="rpThree"></div>
-    </div>
-</div>
+        <!-- Partie droite du carrousel  -->
 
-<div class="exposants">
-    <div class="title">
-        <div class="round"></div>
-        <div class="titleText">LES EXPOSANTS</div>
-    </div>
+        <div class="gallerieD">
 
-    <div class="swiper-container">
-        <div class="cursor"></div>
-        <div class="swiper-wrapper">
-            
-          <div class="swiper-slide">
-              <img class="swipPicture" src="img/carrousel-picture-1.png" alt="Photo carrousel 1"></img>
-              <p class="swipTitle">Perrin Fine Art et Gallerie Perrin</p>
-              <div class="swipSub">
-                <li> <a class="swipSubTitle" href="#">DÉCOUVRIR LES OEUVRES</a></li>
-                <img class="swipSubArrow" src="./img/swipe-arrow-right.png" alt="Flèche droite">
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-img2" style="background-image:url('img/big_picture.png')"></div>
+                    <div class="swiper-slide gallery-img2" style="background-image:url('img/small_picture_1.png')">
+                    </div>
+                    <div class="swiper-slide gallery-img2" style="background-image:url('img/small_picture_2.png')">
+                    </div>
+                    <div class="swiper-slide gallery-img2" style="background-image:url('img/small_picture_3.png')">
+                    </div>
+
+                </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-              <img class="swipPicture" src="img/carrousel-picture-2.png" alt="Photo carrousel 2"></img>
-              <p class="swipTitle">Perrin Fine Art et Gallerie Perrin</p>
-              <div class="swipSub">
-                <li> <a class="swipSubTitle" href="#">DÉCOUVRIR LES OEUVRES</a></li>
-                <img class="swipSubArrow" src="./img/swipe-arrow-right.png" alt="Flèche droite">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img class="swipPicture" src="img/carrousel-picture-3.png" alt="Photo carrousel 3"></img>
-            <p class="swipTitle">Perrin Fine Art et Gallerie Perrin</p>
-            <div class="swipSub">
-                <li> <a class="swipSubTitle" href="#">DÉCOUVRIR LES OEUVRES</a></li>
-                <img class="swipSubArrow" src="./img/swipe-arrow-right.png" alt="Flèche droite">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img class="swipPicture" src="img/carrousel-picture-4.png" alt="Photo carrousel 4"></img>
-            <p class="swipTitle">Perrin Fine Art et Gallerie Perrin</p>
-            <div class="swipSub">
-                <li> <a class="swipSubTitle" href="#">DÉCOUVRIR LES OEUVRES</a></li>
-                <img class="swipSubArrow" src="./img/swipe-arrow-right.png" alt="Flèche droite">
-            </div>
-          </div>
         </div>
+    </div>
+    </div>
 
-      </div>
+<!-- EXPOSANTS  -->
 
-      <div class="btn">
-        <button type="button">
-          <h4 class="btn-exposant-text">VOIR PLUS D'EXPOSANTS</h4>
-        </button>
-      </div>
-
-</div>
-
-
-<div class="containerCategories">
-    <div class="categories">
-        <div class="titleC">
+    <div class="exposants">
+        <div class="title">
             <div class="round"></div>
-            <div class="titleText">CATEGORIES</div>
+            <div class="titleText">LES EXPOSANTS</div>
         </div>
 
-        <div class="categories-box">
-            <div class="categories-box-top">
+        <div class="background-exposants"></div>
 
-                <div class="cate-box b1">
-                    <p class="cate-text">ARCHÉOLOGIE</p>
+        <div class="swiper-container swip-exposants">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide swip-exposants-card">
+                    <img class="swipPicture" src="img/carrousel-picture-1.png" alt="Photo carrousel 1"></img>
+                    <p class="swipTitle">Perrin Fine Art et Gallerie Perrin</p>
+                    <div class="swipSub">
+                        <li> <a class="swipSubTitle" href="#">DÉCOUVRIR LES OEUVRES</a></li>
+                        <img class="swipSubArrow" src="./img/swipe-arrow-right.png" alt="Flèche droite">
+                    </div>
                 </div>
-
-                <div class="cate-box b2">
-                    <p class="cate-text">ANTIQUITÉ</p>
+                <div class="swiper-slide swip-exposants-card">
+                    <img class="swipPicture" src="img/carrousel-picture-2.png" alt="Photo carrousel 2"></img>
+                    <p class="swipTitle">Perrin Fine Art et Gallerie Perrin</p>
+                    <div class="swipSub">
+                        <li> <a class="swipSubTitle" href="#">DÉCOUVRIR LES OEUVRES</a></li>
+                        <img class="swipSubArrow" src="./img/swipe-arrow-right.png" alt="Flèche droite">
+                    </div>
                 </div>
-
-                <div class="cate-box b3">
-                    <p class="cate-text">SCULPTURE</p>
+                <div class="swiper-slide swip-exposants-card">
+                    <img class="swipPicture" src="img/carrousel-picture-3.png" alt="Photo carrousel 3"></img>
+                    <p class="swipTitle">Perrin Fine Art et Gallerie Perrin</p>
+                    <div class="swipSub">
+                        <li> <a class="swipSubTitle" href="#">DÉCOUVRIR LES OEUVRES</a></li>
+                        <img class="swipSubArrow" src="./img/swipe-arrow-right.png" alt="Flèche droite">
+                    </div>
                 </div>
-
-                <div class="cate-box b4">
-                    <p class="cate-text">BIJOUX ANCIEN</p>
+                <div class="swiper-slide swip-exposants-card">
+                    <img class="swipPicture" src="img/carrousel-picture-4.png" alt="Photo carrousel 4"></img>
+                    <p class="swipTitle">Perrin Fine Art et Gallerie Perrin</p>
+                    <div class="swipSub">
+                        <li> <a class="swipSubTitle" href="#">DÉCOUVRIR LES OEUVRES</a></li>
+                        <img class="swipSubArrow" src="./img/swipe-arrow-right.png" alt="Flèche droite">
+                    </div>
                 </div>
-
-                <div class="cate-box b5">
-                    <p class="cate-text">DESSIN</p>
-                </div>
-
-                <div class="cate-box b6">
-                    <p class="cate-text">CADRE ANCIENS</p>
-                </div>
-
-                <div class="cate-box b7">
-                    <p class="cate-text">TAPISSERIE</p>
-                </div>
-
-                <div class="cate-box b8">
-                    <p class="cate-text">MANUSCRITS</p>
-                </div>
-
             </div>
 
-            <div class="categories-box-bottom">
+        </div>
 
-                <div class="cate-box b9">
-                    <p class="cate-text">PEINTURES</p>
+        <div class="btn">
+            <button type="button">
+                <h4 class="btn-exposant-text">VOIR PLUS D'EXPOSANTS</h4>
+            </button>
+        </div>
+
+    </div>
+
+<!-- CATEGORIES  -->
+
+    <div class="containerCategories">
+        <div class="categories">
+            <div class="titleC">
+                <div class="round"></div>
+                <div class="titleText">CATEGORIES</div>
+            </div>
+
+            <div class="categories-box">
+                <div class="categories-box-top">
+
+                    <div class="cate-box b1">
+                        <p class="cate-text">ARCHÉOLOGIE</p>
+                    </div>
+
+                    <div class="cate-box b2">
+                        <p class="cate-text">ANTIQUITÉ</p>
+                    </div>
+
+                    <div class="cate-box b3">
+                        <p class="cate-text">SCULPTURE</p>
+                    </div>
+
+                    <div class="cate-box b4">
+                        <p class="cate-text">BIJOUX ANCIEN</p>
+                    </div>
+
+                    <div class="cate-box b5">
+                        <p class="cate-text">DESSIN</p>
+                    </div>
+
+                    <div class="cate-box b6">
+                        <p class="cate-text">CADRE ANCIENS</p>
+                    </div>
+
+                    <div class="cate-box b7">
+                        <p class="cate-text">TAPISSERIE</p>
+                    </div>
+
+                    <div class="cate-box b8">
+                        <p class="cate-text">MANUSCRITS</p>
+                    </div>
+
                 </div>
 
-                <div class="cate-box b10">
-                    <p class="cate-text">BEAU-ARTS ANCIENS</p>
-                </div>
+                <div class="categories-box-bottom">
 
-                <div class="cate-box b11">
-                    <p class="cate-text">ENLUMINURES</p>
+                    <div class="cate-box b9">
+                        <p class="cate-text">PEINTURES</p>
+                    </div>
+
+                    <div class="cate-box b10">
+                        <p class="cate-text">BEAU-ARTS ANCIENS</p>
+                    </div>
+
+                    <div class="cate-box b11">
+                        <p class="cate-text">ENLUMINURES</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>    
-</div>
-
-
-
-<div class="tableaux">
-    <div class="tabbg"></div>
-    <div class="tabs">
-        <div class="tab1">
-            <img class="tableauGauche" src="./img/tableau1.png" alt="Tableau de gauche">
-        </div>
-        <div class="tab2">
-            <img class="tableauDroite" src="./img/tableau-2.png" alt="Tableau de droite">
         </div>
     </div>
-</div>
+
+<!-- TABLEAUX  -->
+
+    <div class="tableaux">
+        <div class="tabbg"></div>
+        <div class="tabs">
+            <div class="tab1">
+                <img class="tableauGauche" src="./img/tableau1.png" alt="Tableau de gauche">
+            </div>
+            <div class="tab2">
+                <img class="tableauDroite" src="./img/tableau-2.png" alt="Tableau de droite">
+            </div>
+        </div>
+    </div>
 
 
     <script type="text/javascript" src="./js/app.js"></script>
@@ -217,17 +258,18 @@
     <script type="text/javascript" src="./js/carrousel.js"></script>
 </body>
 
+<!-- FOOTER  -->
 
 <footer>
     <div class="footerLogo">
         <img class="footerLogoCarrousel" src="./img/logoCarrousel.png" alt="Logo Carrousel">
     </div>
-    <div class="footerLink1">
+    <div class="footerLink1 footerLink">
         <div class="footerMenu">
             <h4 class="footerMenuTitle">NOUS SUIVRE</h4>
             <div class="footerMenuLine"></div>
             <div class="footerMenuSocial">
-                <ul>
+                <ul class="footerResponsive">
                     <li class="liLink"><a class="link" href="#">Facebook</a></li>
                     <li class="liLink"><a class="link" href="#">Instagram</a></li>
                     <li class="liLink"><a class="link" href="#">Twitter</a></li>
@@ -235,7 +277,7 @@
             </div>
         </div>
     </div>
-    <div class="footerLink2">
+    <div class="footerLink2 footerLink">
         <div class="footerMenu">
             <h4 class="footerMenuTitle">ONGLETS</h4>
             <div class="footerMenuLine"></div>
@@ -258,4 +300,5 @@
         </div>
     </div>
 </footer>
+
 </html>

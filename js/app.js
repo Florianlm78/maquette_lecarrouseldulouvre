@@ -1,5 +1,9 @@
-const cursor = document.querySelector('.cursor');
+// MENU BURGER
 
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute('style', 'top:'+(e.pageY)+"px; left:"+(e.pageX)+"px;")
-})
+var btn = document.querySelector('.toggle_btn');
+var nav = document.querySelector('.nav');
+var body = document.querySelector('body');
+
+btn.onclick = function navbar(){
+    nav.classList.toggle('nav_open');
+}

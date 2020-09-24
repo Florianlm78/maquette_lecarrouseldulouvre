@@ -3,16 +3,17 @@
 
 /* ------------------------- Preset ------------------------- */
 
-*{
+* {
     padding: 0;
     margin: 0;
+    outline: 0;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -20,292 +21,252 @@ a{
 
 /* ------------------------- HEADER / NAV ------------------------- */
 
-header{
+header {
     width: 100vw;
     height: 90px;
-}
-
-/* Menu left */
-
-.leftNav{
-    height: 100%;
-    width: 350px;
-    margin-left: 10vw;
-    float: left;
-}
-
-.leftUl{
     display: flex;
-    justify-content: space-between;
-    margin-top: 10%;
+}
+
+.menu {
+    display: none;
+}
+
+/* Menu gauche */
+
+.leftNav {
+    height: 100%;
+    width: 40%;
+    display: flex;
+}
+
+.leftMenu {
+    height: 50%;
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+
+.leftUl {
+    width: 100%;
+    display: flex;
     font-family: 'Avenir';
     font-size: 12px;
+    margin: auto;
+    justify-content: flex-start;
 }
 
-.nav{
-    display: inline;
-}
-
-
-.navL{
+.navL {
     color: #190D45;
+    margin-right: 20px;
+
 }
 
 /* Menu centre */
 
-.centerNav{
-    position: absolute;
-    height: 90px;
-    width: 200px;
-    left: 43vw;
+.centerNav {
+    margin: auto;
+    width: 20%;
+    display: flex;
 }
 
-.logoCarrousel{
+.logoCarrousel {
     height: 90px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 /* Menu right */
 
-.rightNav{
+.rightNav {
     height: 100%;
-    width: 35vw;
-    margin-right: 4vw;
-    float: right;
+    width: 40%;
+    display: flex;
 }
 
-.rightUl{
+.rightMenu {
+    height: 50%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+.rightUl {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 7%;
     font-family: 'Avenir';
     font-size: 12px;
+    margin: auto;
 }
 
-.navR{
+
+
+.navR {
     color: #190D45;
 }
 
-.pipe{
+.pipe {
     color: #190D45;
     opacity: 20%;
 }
 
 
-/* ------------------------- CARROUSEL------------------------- */
+/* ------------------------- CARROUSEL QUI GÈRE LA LES PREMIÈRES IMAGES ------------------------- */
 
-
-.carrousel{
-    width: 100vw;
+.carrousel-swiper {
+    width: 100%;
     height: 572px;
-    background-color: wheat;
+    display: flex;
+    z-index: 10;
 }
 
-/* Partie gauche du carrousel */
-
-.leftPart{
+.gallerieG {
+    width: 75%;
     height: 100%;
-    width: 75vw;
-    float: left;
-    background-color: violet;
+    background-color: #ffffff;
 }
 
-/* Grande photo du carrousel */
-
-.lhPart{
+.gallery-container-img {
     height: 75%;
     width: 100%;
-    background-image: url(./img/big_picture.png);
+}
+
+.gallery-img {
     background-size: cover;
 }
 
-/* Partie avec le texte, le like et les boutons de navigation */
 
-.lbPart{
+.gallery-img2 {
+    background-size: cover;
+    width: 100% !important;
+    height: 33.3% !important;
+
+}
+
+.gallery-thumbs {
+    height: 100%;
+    width: 100%;
+
+}
+
+.gallerieD {
+    margin-left: 3px;
+    height: 100%;
+    width: 25%;
+    display: flex;
+}
+
+
+.gallerie-text-like-bouton {
+    display: flex;
     height: 25%;
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
 
-/* Partie avec le texte de présentation */
-
-.lblPart{
-    height: 100%;
-    width: 66.9%;
-    background-color: #190D45;
+.gallerie-like {
     float: left;
+    height: 100%;
+    width: 11%;
+    background-color: #190D45;
     display: flex;
 }
 
-.carrouselContent{
-    font-family: 'Avenir';
-    width: 75%;
-    height: 30%;
+.likePng {
+    height: 30px;
     margin: auto;
-    
 }
 
-.carrouselTitle{
+.gallerie-text {
+    height: 100%;
+    width: 66.7%;
+    background-color: #190D45;
+    margin-right: 1px;
+    display: flex;
+}
+
+.gallerie-text-p {
+    height: 25%;
+    margin: auto;
+}
+
+.gallerie-text-p-title {
     font-family: 'Libre Baskerville', serif;
     font-size: 18px;
-    color: white;
+    color: #ffffff;
 }
 
-.carrouselAuthor{
-    padding-top: 4px;
-    font-family: 'Avenir';
-    font-weight: 100;
-    color: white;
-    font-size: 11px;
-    letter-spacing: 2px;
+.gallerie-text-p-author {
+    font-family: 'Avenir light';
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #ffffff;
 }
 
-/* Partie avec le like et les boutons de navigation */
-
-.lbrPart{
+.gallerie-bouton {
+    display: flex;
     height: 100%;
-    width: 33%;
-    background-color: thistle;
-    float: right;
-}
-
-/* Partie avec le like */
-
-.lbrlPart{
-    float: left;
-    height: 100%;
-    width: 30%;
+    width: 22%;
     background-color: #190D45;
+    justify-content: space-between;
+
+}
+
+.gallerie-bouton-prev {
+    height: 100%;
+    width: 49.7%;
+    background-color: #ffffff;
     display: flex;
+
 }
 
-.like{
-    width: 32px;
-    margin: auto;
-}
-
-.likePng{
-    height: 30px;
-}
-
-/* Partie avec les flèches directionnel */
-
-.lbrrPart{
+.gallerie-bouton-next {
+    height: 100%;
+    width: 49.7%;
+    background-color: #ffffff;
     float: right;
-    height: 100%;
-    width: 70%;
-    background-color: #190D45;
-}
-
-.lbrrlPart{
-    float: left;
-    height: 100%;
-    width: 49.8%;
-    background-color: white;
-    display: flex;
-    cursor: pointer;
-}
-
-.lArrow{
-    height: 40%;
-    width: 40%;
-    margin: auto;
     display: flex;
 }
 
-.leftArrow{
-    height: 50px;
+
+.swiper-button-next.swiper-button-white,
+.swiper-button-prev.swiper-button-white {
+    --swiper-navigation-color: #190D45 !important;
     margin: auto;
+
 }
 
-.lbrrrPart{
-    float: right;
-    height: 100%;
-    width: 49.8%;
-    background-color: white;
-    display: flex;
-    cursor: pointer;
+.swiper-button-next,
+.swiper-button-prev {
+    position: initial !important;
+
+
 }
 
-.rArrow{
-    height: 40%;
-    width: 40%;
-    margin: auto;
-    display: flex;
-}
-
-.rightArrow{
-    height: 50px;
-    margin: auto;
-}
-
-/* Partie droite du carroussel avec les 3 petites photos */
-
-.rightPart{
-    height: 100%;
-    width: 25vw;
-    float: right;
-    background-color: rgb(255, 255, 255);
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 15px !important;
 }
 
 
-.rpOne{
-    width: 100%;
-    height: 33%;
-    background-color: peachpuff;
-    margin: 0 0 3px 3px;
-}
-
-.rpTwo{
-    width: 100%;
-    height: 33%;
-    background-color: plum;
-    margin: 0 0 3px 3px;
-}
-
-.rpThree{
-    width: 100%;
-    height: 33%;
-    background-color: rebeccapurple;
-    margin: 0 0 3px 3px;
-}
-
-
-
-.rpOne{
-    background-image: url(./img/small_picture_1.png);
-    background-size: cover;
-}
-
-.rpTwo{
-    background-image: url(./img/small_picture_2.png);
-    background-size: cover;
-}
-
-.rpThree{
-    background-image: url(./img/small_picture_3.png);
-    background-size: cover;
-}
 
 
 /* ------------------------- EXPOSANTS ------------------------- */
-
-.exposants{
+.exposants {
     height: 780px;
     width: 100%;
 }
 
-.title{
+.title {
     position: relative;
     height: 67px;
     width: 230px;
     display: flex;
     margin: 100px auto;
-    
+
 }
-.titleText{
+
+.titleText {
     position: absolute;
     z-index: 2;
     right: 0;
@@ -317,7 +278,7 @@ header{
 }
 
 
-.round{
+.round {
     position: absolute;
     z-index: 1;
     height: 67px;
@@ -327,27 +288,24 @@ header{
 }
 
 /* ------------------------- CARROUSEL EXPOSANTS ------------------------- */
-.cursor{
-    z-index: 3;
-    width: 80px;
-    height: 80px;
-    cursor: none;
-    background-image: url(img/cursor.png);
-    background-size: cover;
-    border-radius: 50%;
+
+.background-exposants {
+    height: 403px;
+    width: 75%;
+    background-color: #F1F2F6;
     position: absolute;
-    opacity: 86%;
+    z-index: -1;
+    top: 150%;
+    right: 0;
 }
 
-  .swiper-container {
+.swip-exposants {
     width: 95%;
     height: 60%;
-  }
+}
 
-  .swiper-slide {
-    background: #fff;
-  
-    /* Center slide text vertically */
+.swip-exposants-card {
+    background: transparent;
     display: flex;
 
     -webkit-box-align: center;
@@ -356,17 +314,15 @@ header{
     align-items: center;
     flex-direction: column;
 
-  }
+}
 
-
-
-.swipPicture{
+.swipPicture {
     width: 100%;
     height: 85%;
     object-fit: cover;
 }
 
-.swipTitle{
+.swipTitle {
     padding-top: 6px;
     width: 100%;
     height: 10%;
@@ -375,13 +331,13 @@ header{
     color: #190D45;
 }
 
-.swipSub{
+.swipSub {
     width: 100%;
     height: 5%;
-    padding-top: 6px;
+    padding-top: 4px;
 }
 
-.swipSubTitle{
+.swipSubTitle {
     font-family: 'Avenir book';
     font-size: 10px;
     color: #190D45;
@@ -389,20 +345,20 @@ header{
 }
 
 
-.swipSubArrow{
-    height: 12px;
-    padding-left: 5px;
+.swipSubArrow {
+    height: 14px;
+    margin-left: 20px;
 }
 
 /* ------------------------- BOUTON EXPOSANTS ------------------------- */
 
-.btn{
+.btn {
     height: 60px;
     width: 100%;
     margin-top: 70px;
 }
 
-button{
+button {
     height: 50px;
     width: 286px;
     background-color: #190D45;
@@ -412,7 +368,7 @@ button{
     margin: auto;
 }
 
-.btn-exposant-text{
+.btn-exposant-text {
     font-family: 'Avenir light';
     font-size: 12px;
     color: #ffffff;
@@ -421,19 +377,19 @@ button{
 
 /* ------------------------- CATEGORIES ------------------------- */
 
-.containerCategories{
+.containerCategories {
     width: 100%;
     height: 400px;
     display: flex;
 }
 
-.categories{
+.categories {
     height: 221px;
     width: 920px;
     margin: auto;
 }
 
-.titleC{
+.titleC {
     position: relative;
     height: 32%;
     width: 195px;
@@ -441,7 +397,7 @@ button{
     margin: 0 auto;
 }
 
-.categories-box-top{
+.categories-box-top {
     margin-top: 10%;
     width: 100%;
     height: 28%;
@@ -449,7 +405,7 @@ button{
     justify-content: space-between;
 }
 
-.categories-box-bottom{
+.categories-box-bottom {
     margin-top: 10px;
     width: 100%;
     height: 28%;
@@ -457,7 +413,7 @@ button{
     justify-content: center;
 }
 
-.cate-box{
+.cate-box {
     height: 51px;
     background-color: #FFFFFF;
     border: 1px solid #190D45;
@@ -466,69 +422,70 @@ button{
     color: #190D45;
 }
 
-.cate-box:hover{
-    background-color: #190D45;;
+.cate-box:hover {
+    background-color: #190D45;
+    ;
     border: 1px solid #ffffff;
     color: #ffffff;
     transition-duration: 0.3s;
 }
 
-.cate-text{
+.cate-text {
     font-family: 'Avenir light';
     font-size: 12px;
     letter-spacing: 1px;
     margin: auto;
-    
+
 }
 
-.b1{
+.b1 {
     width: 118px;
 }
 
-.b2{
+.b2 {
     width: 94px;
 }
 
-.b3{
+.b3 {
     width: 97px;
 }
 
-.b4{
+.b4 {
     width: 128px;
 }
 
-.b5{
+.b5 {
     width: 70px;
 }
 
-.b6{
+.b6 {
     width: 139px;
 }
 
-.b7{
+.b7 {
     width: 95px;
 }
 
-.b8{
+.b8 {
     width: 108px;
 }
 
-.b9{
+.b9 {
     width: 94px;
 }
 
-.b10{
+.b10 {
     width: 174px;
     margin: 0 10px 0 10px;
 }
 
-.b11{
+.b11 {
     width: 118px;
 }
 
 /* ------------------------- TABLEAUX ------------------------- */
 
-.tableaux{
+.tableaux {
     position: relative;
     width: 100%;
     height: 700px;
@@ -536,7 +493,7 @@ button{
 }
 
 
-.tabbg{
+.tabbg {
     z-index: 3;
     width: 70vw;
     height: 480px;
@@ -544,39 +501,37 @@ button{
     margin: auto 0;
 }
 
-.tabs{
+.tabs {
     display: flex;
     position: absolute;
     z-index: 4;
     height: 373px;
     width: 1110px;
     background-color: transparent;
-    top: 50%; 
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     justify-content: space-between;
 }
 
-.tab1{
+.tab1 {
     height: 100%;
     width: 540px;
-    background-color: chocolate;
     float: left;
 }
 
-.tab2{
+.tab2 {
     height: 100%;
     width: 540px;
-    background-color: crimson;
     float: right;
 }
 
-.tableauGauche{
+.tableauGauche {
     height: 100%;
     width: 100%;
 }
 
-.tableauDroite{
+.tableauDroite {
     height: 100%;
     width: 100%;
 }
@@ -584,56 +539,56 @@ button{
 
 /* ------------------------- FOOTER ------------------------- */
 
-footer{
+footer {
     height: 254px;
     width: 100%;
     background-color: #F1F2F6;
     display: flex;
 }
 
-.footerLogo{
+.footerLogo {
     height: 100%;
     width: 30%;
     display: flex;
 }
 
-.footerLink1{
+.footerLink1 {
     height: 100%;
     width: 20%;
     display: flex;
 }
 
-.footerLink2{
+.footerLink2 {
     height: 100%;
     width: 20%;
     display: flex;
 }
 
-.footerSearch{
+.footerSearch {
     height: 100%;
     width: 30%;
     display: flex
 }
 
-.footerLogoCarrousel{
+.footerLogoCarrousel {
     height: 130px;
     margin: auto;
 }
 
-.footerMenu{
+.footerMenu {
     width: 160.5px;
     height: 129px;
     margin: auto;
 }
 
-.footerMenuTitle{
+.footerMenuTitle {
     font-family: 'Avenir light';
     font-size: 14px;
     letter-spacing: 1px;
     color: #190D45;
 }
 
-.footerMenuLine{
+.footerMenuLine {
     height: 1px;
     width: 160px;
     background-color: #DFDFDF;
@@ -641,36 +596,214 @@ footer{
 
 }
 
-.link{
+.link {
     font-family: 'Avenir light';
     font-size: 15px;
     color: #808085;
 }
 
-.liLink{
+.liLink {
     margin-top: 10px;
 }
 
-.footerMenu2{
+.footerMenu2 {
     width: 180.5px;
     height: 129px;
     margin: auto 20%;
 }
 
-.footerMenuLine2{
+.footerMenuLine2 {
     height: 1px;
     width: 255px;
     background-color: #DFDFDF;
     margin: 8px 0;
 }
 
-.barRecherche{
+.barRecherche {
     display: flex;
     height: 20px;
     width: 255px;
     justify-content: space-between;
 }
 
-.loop{
+.loop {
     height: 14px;
+}
+
+
+
+/* ------------------------- RESPONSIVE ------------------------- */
+
+@media screen and (max-width: 1173px) {
+
+    header {
+        display: block;
+    }
+
+    .toggle_btn {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        float: right;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .toggle_btn span {
+        height: 3px;
+        background-color: #190D45;
+        width: 100%;
+        position: absolute;
+        top: 20px;
+        left: 0;
+    }
+
+    .toggle_btn span:before {
+        content: '';
+        height: 3px;
+        background-color: #190D45;
+        width: 100%;
+        position: absolute;
+        top: -10px;
+        left: 0;
+    }
+
+    .toggle_btn span:after {
+        content: '';
+        height: 3px;
+        background-color: #190D45;
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+
+    .menu {
+        height: 1000px;
+        background-color: #190D45;
+        width: 200px;
+    }
+
+    .menu a {
+        color: #ffffff;
+        font-family: 'Avenir';
+        text-align: center;
+        display: block;
+        padding-top: 30px;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .nav {
+        margin-left: -200px;
+        transition: 0.2s;
+        display: block;
+
+    }
+
+    .nav_open {
+        position: fixed;
+        margin-left: 0;
+        transition-duration: 0.2s;
+        z-index: 15;
+    }
+
+    .leftNav {
+        display: none;
+    }
+
+    .rightNav {
+        display: none;
+    }
+
+    .centerNav {
+        margin: auto;
+        width: 100%;
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .gallerieD {
+        display: none;
+    }
+
+    .gallerieG {
+        width: 100%;
+    }
+
+    .tabs {
+        display: block;
+    }
+
+    .tab1 .tab2 {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .tableaux {
+        position: relative;
+        width: 90%;
+        height: 850px;
+        display: block;
+    }
+
+    .tabs {
+        top: 25%;
+    }
+
+    .tab1 {
+        margin-left: 25%;
+        width: 600px;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+
+    .tab2 {
+        height: 100%;
+        width: 600px;
+        margin-left: 25%;
+        float: none;
+    }
+
+    .tabbg {
+        position: absolute;
+        z-index: 0;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .footerLogo {
+        width: 100%;
+    }
+
+    .footerLogoCarrousel {
+        margin-left: 25%;
+    }
+
+    .footerMenu {
+        display: none;
+    }
+
+    .footerLink2 {
+        display: none;
+    }
+
+    .footerLink1 {
+        display: none;
+    }
+
+    .footerSearch {
+        display: none;
+    }
 }
